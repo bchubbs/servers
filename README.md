@@ -6,7 +6,7 @@ This impl server management system allows us to check the specified server's por
 Port checking is used to compare and identify each Spigot servers from eachother. \
 \
 Groups are used to put specific servers into different groups. For example, Hub1 and Hub2 are put into the "Hub" group, while KitPvP and Skywars are put into the "Game" group.\
-The purpose of this is for our RNENV dump that logs statistics on what games players enjoy (and are most active on.)
+The purpose of this is for our PENV dump that logs statistics on what games players enjoy (and are most active on.)
 \
 Announcements are used to send messages between Spigot servers, similar to a Redis "PubSub", but through MySQL. Additionally, when an announcement is updated, we can choose to broadcast this announcement to every server under the proxy. Similar to /alert, but our plugins will look for these messages. I wouldn't advise broadcasting these messages unless it is for testing purposes.\
 \
