@@ -1,5 +1,5 @@
 # servers
-**VERY OLD** Server API used in Krypton \
+**VERY OLD (2018)** Server API used in Krypton \
 \
 This impl server management system allows us to check the specified server's port, group, and announcement. Additionally, we can add servers to the proxy without restarting the entire Bungee through Spigot. This is very useful when setting up event/test servers. \
 \
@@ -17,3 +17,6 @@ You'll need to modify this code in order to setup MySQL properly, as I can't giv
 In order to add/remove servers to the proxy, you'll need to simply listen for when a new server is added (using a command such as /setserver), and add the port to Bungee's config.yml. Then, reload the config. Essentially, you'll need a Bungee plugin and a Spigot plugin to accomplish this.
 
 Besides identifying servers, this server impl allows us to check what server a punishment was added on, or a grant's scope can be identified.
+
+**Production**\
+I wouldn't recommend using this code for production purposes, as exceptions aren't properly handled. Additionally, there is no impl class. I would recommend heavily modifying this, which I may do at a future date.
